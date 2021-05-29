@@ -10,10 +10,6 @@
 
 }
 
-
-
-
-
 /* GENERAL STYLE */
 
 html {
@@ -66,7 +62,6 @@ body {
   background-color: var(--main-bg-color);
 }
 
-
 /* REPEATED STYLES */
 
 .primary-link {
@@ -81,7 +76,7 @@ body {
   background-color: var(--primary-color);
   color: #fff;
   transition: background-color 0.3s ease, color 0.3s ease,
-    color 0.3s ease;
+  color 0.3s ease;
 
 }
 
@@ -89,7 +84,6 @@ body {
   background-color: #fff;
   color: var(--primary-color);
 }
-
 
 .primary-link:active {
 
@@ -142,6 +136,7 @@ body {
 
 }
 
+/* LOGO */
 .logo {
   margin-right: auto;
   transition: background-color 0.3s easem, opacity 0.3s ease;
@@ -178,7 +173,6 @@ body {
   display: block;
 }
 
-
 .sitenav-link {
   margin-bottom: 0;
   padding: 16px;
@@ -189,8 +183,6 @@ body {
   text-decoration: none;
   border-bottom:3px solid transparent;
   transition: border 0.3s ease, background-color 0.3s ease;
-
-
 }
 .sitenav-link:hover{
   border-color: #191919;
@@ -198,6 +190,7 @@ body {
 .sitenav-link:active{
   background-color: rgba(25, 25, 25, 0.7);
   border-color: transparent;
+  color: #fff;
 }
 
 .sitenav-link-tel{
@@ -222,9 +215,6 @@ body {
   box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
 }
 
-.sitenav-dropdown-item {}
-
-
 .sitenav-dropdown-link {
   width: 100%;
   display: block;
@@ -240,7 +230,6 @@ body {
   color: var(--main-text-color);
   transition: background-color 0.3s ease, opacity 0.3s ease, color 0.3s ease;
 }
-
 
 .sitenav-item:hover .sitenav-dropdown-list {
   display: block;
@@ -275,7 +264,6 @@ body {
 
 }
 
-
 .hero-desc {
   width: 470px;
 }
@@ -306,6 +294,7 @@ body {
   border:none;
   width: 458px;
   height: 258px;
+  border-radius: var(--main-border-radius);
 }
 
 /* SERVICES  */
@@ -322,9 +311,6 @@ body {
   margin-bottom: 16px;
   text-align: center;
 }
-
-
-
 
 .services-list{
   margin: 0;
@@ -379,13 +365,16 @@ body {
 
 }
 
+.services-item-desc::before{
+
+}
+
 .website-item::before{
   background-image: url("../img/website-illustration.svg");
-   background-repeat: no-repeat;
 }
 
 .telegram-bot-item{
-   background-image: url("../img/bot-illustration.svg");
+  background-image: url("../img/bot-illustration.svg");
   background-repeat: no-repeat;
 }
 
@@ -404,7 +393,6 @@ body {
   width: 170px;
   background-repeat: no-repeat;
 }
-
 
 .services-link {
   display: block;
@@ -516,21 +504,21 @@ body {
 
 }
 
- .learn-demand-item::before{
+.learn-demand-item::before{
 
   background-image: url("../img/step-illlustration-man.svg");
   background-size: contain;
   height: 278px;
   width: 300px;
   margin-right: 32px;
- }
+}
 
- .offer-solution-item::before{
-   background-image: url("../img/step-illlustration-woman.svg");
-   height: 225px;
-   width: 300px;
-   margin-left: 32px;
- }
+.offer-solution-item::before{
+  background-image: url("../img/step-illlustration-woman.svg");
+  height: 225px;
+  width: 300px;
+  margin-left: 32px;
+}
 
 
 .deadline-item::before{
@@ -542,10 +530,10 @@ body {
 }
 
 .good-quality-item::before{
-   background-image: url("../img/step-illustration-best-quality.svg");
-   height: 171px;
-   width: 300px;
-   margin-left: 32px;
+  background-image: url("../img/step-illustration-best-quality.svg");
+  height: 171px;
+  width: 300px;
+  margin-left: 32px;
 }
 
 .support-item::before{
@@ -705,13 +693,13 @@ body {
 }
 
 .footer-general-link{
- margin-bottom: 8px;
- font-weight: normal;
- font-size: 16px;
- line-height: 24px;
- text-decoration: none;
- color: #fff;
- transition: color 0.3s ease;
+  margin-bottom: 8px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
 }
 
 .footer-general-link:last-child {
@@ -762,8 +750,6 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   margin-right: 8px  ;
-  /* align-self: center; */
-  /* margin-bottom: 8px; */
   transition: opacity 0.3s ease;
 
 }
