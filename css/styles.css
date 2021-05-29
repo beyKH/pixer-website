@@ -634,14 +634,33 @@ body {
   border: none;
   color: white;
   border-radius: var(--main-border-radius);
+  font-weight: 700;
+  border: 3px solid var(--primary-color);
+  border-radius: var(--main-border-radius);
+  background-color: var(--primary-color);
+  color: #fff;
+  transition: background-color 0.3s ease,color 0.3s ease;
 }
+
+.form-submit-button:hover {
+  background-color: #fff;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.form-submit-button:active {
+
+  background-color: var(--primary-active-color);
+  border-color: transparent;
+  color: #fff;
+
+}
+
 
 .submit-box{
   display: flex;
   justify-content: center;
 }
-
-
 
 /* SITE-FOOTER */
 .site-footer{
