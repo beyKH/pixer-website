@@ -149,7 +149,7 @@
 
         </ul>
         <div class="services-link">
-          <a class="services-order-link primary-link" href="#">Buyurtma berish</a>
+          <a class="services-order-link primary-link" href="#section-order">Buyurtma berish</a>
           <a class="go-to-services-link" href="services.html">Xizmatlar sahifasiga o’tish</a>
         </div>
       </section>
@@ -160,7 +160,7 @@
           <p class="advantages-info asection-info">Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis lacinia ex, eget sollicitudin massa pellentesque in. Vivamus mattis eros at sem pulvinar</p>
         </div>
 
-        <ul class="advantages-list">
+        <ol class="advantages-list">
           <!-- LEARNING DEMAND -->
           <li class="advantages-item learn-demand-item advantages-general-item ">
             <div class="advantages-item-desc">
@@ -203,16 +203,48 @@
             </div>
           </li>
 
-        </ul>
+        </ol>
 
         <div class="advantages-link">
-          <a class="order-now-link primary-link" href="#">Buyurtma berish</a>
+          <a class="order-now-link primary-link" href="#section-order">Buyurtma berish</a>
         </div>
       </section>
 
-
-
     </div>
+      <!-- fotm -->
+    <section id="section-order" class="section-form">
+      <div class="container">
+        <div class="form-desc">
+          <h2 class="form-heading section-heading">Buyurtma berish</h2>
+          <p class="section-info form-info">Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam
+          facilisis lacinia ex, eget sollicitudin massa pellentesque in. Vivamus mattis eros at sem pulvinar</p>
+        </div>
+        <div class="form-box">
+          <form class="user-form" action="https://echo.htmlacademy.ru" method="POST">
+            <div class="input-group">
+              <label class="input-label visually-hidden" for="input-name">Ismingiz</label>
+              <input class="input-field" id="input-name" name="name" type="text" minlength="2" placeholder="Ismingiz"
+                required>
+            </div>
+            <div class="input-group">
+              <label class="input-label visually-hidden">Telefon raqamingiz</label>
+              <input class="input-field" type="tel" name="Lastname" placeholder="Telefon raqamingiz"
+                required>
+            </div>
+            <div class="input-group">
+              <select class="input-select" name="service-type" id="conutry" required>
+                <option value="" disabled selected>Xizmat turi</option>
+                <option value="smm">SMM</option>
+                <option value="bot">Telegram bot</option>
+              </select>
+            </div>
+            <div class="submit-box">
+              <button class="form-submit-button" type="submit">Buyurtma berish</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
   </main>
 
 </body>
