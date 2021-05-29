@@ -247,6 +247,7 @@ body {
 
 .services {
   padding-top: 56px;
+  padding-bottom: 56px;
 }
 
 .services-desc {
@@ -363,11 +364,145 @@ body {
   justify-content: center;
 }
 
-
 .go-to-services-link{
   color: var(--primary-color);
   margin-left: 16px;
+  text-decoration: underline;
 }
+
+/* ADVANTAGES */
+.advantages {
+  padding-top: 56px ;
+  padding-bottom: 56px;
+}
+
+.advantages-desc {
+  width: 720px;
+  margin-left: auto;
+  margin-right: auto ;
+  text-align: center;
+}
+
+.advantages-heading {
+  margin: 0;
+}
+.advantages-info{
+  margin-bottom: 24px;
+
+}
+
+.advantages-list {
+  list-style: none;
+  width: 832px;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.advantages-item {
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.advantages-item:last-child{
+  margin-bottom: 48px;
+}
+
+.advantages-item-desc{
+  width: 500px;
+  /* display: block; */
+}
+
+
+.advantages-item-heading {
+  margin-bottom: 8px;
+}
+
+.sub-heading {
+  margin-bottom: 8px;
+}
+
+.advantages-item-info {
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 493px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+ .learn-demand-item::before{
+  display: block;
+  content: '';
+  background-repeat: no-repeat;
+  background-image: url("../img/step-illlustration-man.svg");
+  background-size: contain;
+  height: 278px;
+  width: 300px;
+  margin-right: 32px;
+ }
+
+ .offer-solution-item::after{
+   display: block;
+   content: '';
+   background-image: url("../img/step-illlustration-woman.svg");
+   background-repeat: no-repeat;
+   height: 225px;
+   width: 300px;
+   margin-left: 32px;
+ }
+
+
+.deadline-item::before{
+  display: block;
+  content: '';
+  background-repeat: no-repeat;
+  background-image: url("../img/step-illustration-boy.svg");
+  background-size: contain;
+  height: 278px;
+  width: 300px;
+  margin-right: 32px;
+}
+
+.good-quality-item::after{
+   display: block;
+   content: '';
+   background-image: url("../img/step-illustration-best-quality.svg");
+   background-repeat: no-repeat;
+   height: 171px;
+   width: 300px;
+   margin-left: 32px;
+}
+
+.support-item::before{
+  display: block;
+  content: '';
+  background-repeat: no-repeat;
+  background-image: url("../img/step-illustration-screen-with-boy.svg");
+  background-size: contain;
+  height: 278px;
+  width: 300px;
+  margin-right: 32px;
+}
+
+
+.advantages-link {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.order-now-link {
+  display: inline-block;
+}
+
+.primary-link {}
+
 
 
 
@@ -386,7 +521,7 @@ body {
   background-color: var(--primary-color);
   color: #fff;
   transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease,
-    color 0.3s ease;
+  color 0.3s ease;
 
 }
 
@@ -406,6 +541,10 @@ body {
 
 .section-heading{
   font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-bottom: 16px;
+  line-height: 24px;
   font-size: 24px;
   line-height: 130%;
   color: var(--main-text-color);
@@ -413,7 +552,18 @@ body {
 
 .section-info{
   font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 16px;
   line-height: 24px;
   color: var(--main-text-color);
+}
+
+.sub-heading{
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 130%;
+
 }
