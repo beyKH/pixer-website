@@ -404,7 +404,7 @@ body {
   margin-bottom: 50px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  width: 100%;
 
 }
 
@@ -414,7 +414,6 @@ body {
 
 .advantages-item-desc{
   width: 500px;
-  /* display: block; */
 }
 
 
@@ -435,10 +434,20 @@ body {
   line-height: 24px;
 }
 
- .learn-demand-item::before{
+.advantages-general-item::before, .advantages-general-item::after{
   display: block;
   content: '';
   background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+.advantages-general-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+ .learn-demand-item::before{
+
   background-image: url("../img/step-illlustration-man.svg");
   background-size: contain;
   height: 278px;
@@ -446,11 +455,8 @@ body {
   margin-right: 32px;
  }
 
- .offer-solution-item::after{
-   display: block;
-   content: '';
+ .offer-solution-item::before{
    background-image: url("../img/step-illlustration-woman.svg");
-   background-repeat: no-repeat;
    height: 225px;
    width: 300px;
    margin-left: 32px;
@@ -458,24 +464,18 @@ body {
 
 
 .deadline-item::before{
-  display: block;
-  content: '';
-  background-repeat: no-repeat;
   background-image: url("../img/step-illustration-boy.svg");
   background-size: contain;
-  height: 278px;
+  height: 259px;
   width: 300px;
   margin-right: 32px;
 }
 
-.good-quality-item::after{
-   display: block;
-   content: '';
+.good-quality-item::before{
    background-image: url("../img/step-illustration-best-quality.svg");
-   background-repeat: no-repeat;
    height: 171px;
    width: 300px;
-   margin-left: 32px;
+   margin-left: 32%px;
 }
 
 .support-item::before{
@@ -484,9 +484,9 @@ body {
   background-repeat: no-repeat;
   background-image: url("../img/step-illustration-screen-with-boy.svg");
   background-size: contain;
-  height: 278px;
-  width: 300px;
   margin-right: 32px;
+  height: 232px;
+  width: 300px;
 }
 
 
@@ -501,7 +501,7 @@ body {
   display: inline-block;
 }
 
-.primary-link {}
+
 
 
 
