@@ -122,6 +122,27 @@ body {
 
 }
 
+.main-link{
+  padding: 8px 16px;
+  background-color: #00BAFC;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: var(--main-border-radius);
+  transition: background-color 0.3s ease;
+
+}
+
+.main-link:hover{
+  background-color: rgba(0, 186, 252, 0.8);
+}
+
+.main-link:active{
+  background: rgba(0, 186, 252, 0.6);
+}
+
 /* SITE-HEADER */
 .site-header {
   position: fixed;
@@ -194,6 +215,7 @@ body {
 }
 
 .sitenav-link-tel{
+  margin-left: 1px;
   display: inline-block;
   padding:8px 16px;
   font-size: 16px;
@@ -203,14 +225,17 @@ body {
 /* DROPDOWN */
 
 .sitenav-dropdown-list {
+  margin: 0;
+  padding: 0;
+  padding-top:8px ;
+  padding-bottom: 8px;
   position: absolute;
   left: -15%;
   top: 100%;
-  margin: 0;
-  padding: 0;
   display: none;
   list-style: none;
   overflow: hidden;
+  background-color: #fff;
   border-radius: var(--main-border-radius);
   box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
 }
@@ -630,31 +655,15 @@ body {
 
 .form-submit-button{
   padding: 8px 16px;
-  background-color: var(--primary-color);
   border: none;
-  color: white;
-  border-radius: var(--main-border-radius);
-  font-weight: 700;
-  border: 3px solid var(--primary-color);
-  border-radius: var(--main-border-radius);
-  background-color: var(--primary-color);
   color: #fff;
   transition: background-color 0.3s ease,color 0.3s ease;
 }
 
 .form-submit-button:hover {
-  background-color: #fff;
-  color: var(--primary-color);
   cursor: pointer;
 }
 
-.form-submit-button:active {
-
-  background-color: var(--primary-active-color);
-  border-color: transparent;
-  color: #fff;
-
-}
 
 
 .submit-box{
